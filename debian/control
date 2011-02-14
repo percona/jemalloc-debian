@@ -1,0 +1,29 @@
+Source: jemalloc
+Priority: extra
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), automake, xsltproc, docbook-xsl
+Standards-Version: 3.9.1
+Section: libs
+Homepage: http://www.canonware.com/jemalloc/
+Vcs-Git: git://git.debian.org/collab-maint/jemalloc.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/jemalloc.git;a=summary
+
+Package: libjemalloc-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libjemalloc1 (= ${binary:Version})
+Description: development files and documentation for jemalloc
+ Files used for development with jemalloc.
+ .
+ Headers and documentation.
+
+Package: libjemalloc1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a general-purpose scalable concurrent malloc(3) implementation
+ A library providing a malloc(3) implementation for multi-threaded processes on
+ multi-processor systems.
+ .
+ Notable features are reduced lock contention, predictable low fragmentation,
+ and introspection with heap profiling.
