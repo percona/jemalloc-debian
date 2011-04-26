@@ -1,5 +1,5 @@
-jemalloc (2.1.1-1) unstable; urgency=low
+jemalloc (2.2.1-1) unstable; urgency=low
 
   * Initial release (Closes: #613442)
 
- -- Stig Sandbeck Mathisen <ssm@debian.org>  Tue, 15 Feb 2011 14:47:33 +0100
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Tue, 26 Apr 2011 13:45:19 +0200
