@@ -1,0 +1,25 @@
+From: Stig Sandbeck Mathisen <ssm@debian.org>
+Date: Tue, 26 Apr 2011 14:13:06 +0200
+Subject: jemalloc/Makefile.in: Add -lpthread to tests
+
+---
+ jemalloc/Makefile.in |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/jemalloc/Makefile.in b/jemalloc/Makefile.in
+index 26da0e2..de7492f 100644
+--- a/jemalloc/Makefile.in
++++ b/jemalloc/Makefile.in
+@@ -136,9 +136,9 @@ doc: $(DOCS)
+ 		 @objroot@lib/libjemalloc@install_suffix@.$(SO)
+ 	@mkdir -p $(@D)
+ ifneq (@RPATH@, )
+-	$(CC) -o $@ $< @RPATH@@objroot@lib -L@objroot@lib -ljemalloc@install_suffix@
++	$(CC) -o $@ $< @RPATH@@objroot@lib -L@objroot@lib -ljemalloc@install_suffix@ -lpthread
+ else
+-	$(CC) -o $@ $< -L@objroot@lib -ljemalloc@install_suffix@
++	$(CC) -o $@ $< -L@objroot@lib -ljemalloc@install_suffix@ -lpthread
+ endif
+ 
+ install_bin:
+-- 
