@@ -17,7 +17,7 @@ override_dh_auto_build:
 	make -C jemalloc all doc
 
 override_dh_auto_test:
-	make -C jemalloc tests
+	make -C jemalloc check
 
 override_dh_auto_install:
 	make -C jemalloc install_include install_lib DESTDIR=$(CURDIR)/debian/tmp
