@@ -1,7 +1,7 @@
 Source: jemalloc
 Priority: extra
 Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), automake, xsltproc, docbook-xsl
+Build-Depends: debhelper (>= 8), automake, xsltproc, docbook-xsl
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://www.canonware.com/jemalloc/
