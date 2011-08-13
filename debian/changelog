@@ -1,3 +1,9 @@
+jemalloc (2.2.2-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Sat, 13 Aug 2011 11:20:45 +0200
+
 jemalloc (2.2.1-1) unstable; urgency=low
 
   * Initial release (Closes: #613442)
