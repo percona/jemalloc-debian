@@ -21,7 +21,7 @@ Package: libjemalloc1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: a general-purpose scalable concurrent malloc(3) implementation
+Description: general-purpose scalable concurrent malloc(3) implementation
  A library providing a malloc(3) implementation for multi-threaded processes on
  multi-processor systems.
  .
