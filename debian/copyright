@@ -50,11 +50,11 @@ License:
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: jemalloc/bin/pprof
+Files: bin/pprof
 Copyright: 1998-2007, Google Inc.
 License: BSD-3-Clause
 
-Files: jemalloc/bin/pprof (embedded SVGPan library)
+Files: bin/pprof (embedded SVGPan library)
 Copyright: 2009-2010 Andrea Leofreddi <a.leofreddi@itcharm.com>
 License:
  Redistribution and use in source and binary forms, with or without

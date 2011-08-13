@@ -4,21 +4,21 @@
 %:
 	dh $@ 
 
-ifneq  ($(realpath jemalloc/Makefile),)
+ifneq  ($(realpath Makefile),)
 override_dh_auto_clean:
-	make -C jemalloc relclean
-	rm -f jemalloc/changelog
+	make relclean
+	rm -f changelog
 endif
 
 override_dh_auto_configure:
-	cd jemalloc && ./autogen.sh --prefix=/usr
+	./autogen.sh --prefix=/usr
 
 override_dh_auto_build:
-	make -C jemalloc all doc
+	make all doc
 
 override_dh_auto_test:
-	make -C jemalloc check
+	make check
 
 override_dh_auto_install:
-	make -C jemalloc install_include install_lib DESTDIR=$(CURDIR)/debian/tmp
-	install jemalloc/ChangeLog jemalloc/changelog
+	make install_include install_lib DESTDIR=$(CURDIR)/debian/tmp
+	install ChangeLog changelog
