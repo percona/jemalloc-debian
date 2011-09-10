@@ -7,7 +7,6 @@
 ifneq  ($(realpath Makefile),)
 override_dh_auto_clean:
 	make relclean
-	rm -f changelog
 endif
 
 override_dh_auto_configure:
@@ -21,4 +20,3 @@ override_dh_auto_test:
 
 override_dh_auto_install:
 	make install_include install_lib DESTDIR=$(CURDIR)/debian/tmp
-	install ChangeLog changelog
