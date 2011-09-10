@@ -4,14 +4,6 @@
 %:
 	dh $@ 
 
-ifneq  ($(realpath Makefile),)
-override_dh_auto_clean:
-	make relclean
-endif
-
-override_dh_auto_configure:
-	./autogen.sh --prefix=/usr
-
 override_dh_auto_build:
 	make all doc
 
