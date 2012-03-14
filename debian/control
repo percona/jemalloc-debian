@@ -33,3 +33,13 @@ Description: general-purpose scalable concurrent malloc(3) implementation
  .
  Notable features are reduced lock contention, predictable low fragmentation,
  and introspection with heap profiling.
+
+Package: libjemalloc1-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libjemalloc1 (= ${binary:Version}), ${misc:Depends}
+Description: debug symbols for jemalloc
+ Files used for debugging and profiling with jemalloc.
+ .
+ Debug symbols.
