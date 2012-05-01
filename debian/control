@@ -14,7 +14,7 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/jemalloc.git;a=summary
 
 Package: libjemalloc-dev
 Section: libdevel
-Architecture: any
+Architecture: amd64 armhf i386 ia64 mips mipsel powerpc s390 s390x sparc
 Depends: ${misc:Depends}, libjemalloc1 (= ${binary:Version})
 Description: development files and documentation for jemalloc
  Files used for development with jemalloc.
@@ -23,7 +23,7 @@ Description: development files and documentation for jemalloc
 
 Package: libjemalloc1
 Section: libs
-Architecture: any
+Architecture: amd64 armhf i386 ia64 mips mipsel powerpc s390 s390x sparc
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: general-purpose scalable concurrent malloc(3) implementation
