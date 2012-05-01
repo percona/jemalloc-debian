@@ -1,7 +1,11 @@
 Source: jemalloc
 Priority: extra
 Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
-Build-Depends: debhelper (>= 8), automake, xsltproc, docbook-xsl
+Build-Depends:
+ automake,
+ debhelper (>= 9),
+ docbook-xsl,
+ xsltproc,
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://www.canonware.com/jemalloc/
@@ -20,6 +24,7 @@ Description: development files and documentation for jemalloc
 Package: libjemalloc1
 Section: libs
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: general-purpose scalable concurrent malloc(3) implementation
  A library providing a malloc(3) implementation for multi-threaded processes on
