@@ -1,3 +1,13 @@
+jemalloc (2.2.5-2) unstable; urgency=low
+
+  * Fix FTBFS (Closes: #624325)
+    * Add patch for missing LG_QUANTUM values for "sparc" and "s390"
+    * Restrict architectures to "linux-any and not armel"
+  * Bump standards version (no changes)
+  * Use debhelper compat level 9, and multiarch
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Tue, 01 May 2012 22:29:12 +0200
+
 jemalloc (2.2.5-1) unstable; urgency=low
 
   * New upstream release (Closes: #650627)
