@@ -22,7 +22,6 @@ Description: development files and documentation for jemalloc
  Headers and documentation.
 
 Package: libjemalloc1
-Section: libs
 Architecture: amd64 armhf i386 ia64 mips mipsel powerpc s390 s390x sparc
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
