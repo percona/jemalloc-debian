@@ -1,8 +1,10 @@
 jemalloc (3.0.0-1) unstable; urgency=low
 
   * New upstream version
+  * Build on all architectures
+  * Patch "configure" to know about "*-*-kfreebsd*"
 
- -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 18 May 2012 12:14:54 +0200
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 18 May 2012 12:52:31 +0200
 
 jemalloc (2.2.5-2) unstable; urgency=low
 
