@@ -1,4 +1,9 @@
 libjemalloc.so.1 libjemalloc1 #MINVER#
+ __free_hook@Base 3.0.0
+ __malloc_hook@Base 3.0.0
+ __memalign_hook@Base 3.0.0
+ __realloc_hook@Base 3.0.0
+ aligned_alloc@Base 3.0.0
  allocm@Base 2.1.1
  calloc@Base 2.1.1
  dallocm@Base 2.1.1
@@ -11,9 +16,10 @@ libjemalloc.so.1 libjemalloc1 #MINVER#
  malloc_message@Base 2.1.1
  malloc_stats_print@Base 2.1.1
  malloc_usable_size@Base 2.1.1
+ nallocm@Base 3.0.0
  memalign@Base 2.1.1
  posix_memalign@Base 2.1.1
- pthread_create@Base 2.1.1
+#MISSING: 3.0.0# pthread_create@Base 2.1.1
  rallocm@Base 2.1.1
  realloc@Base 2.1.1
  sallocm@Base 2.1.1
