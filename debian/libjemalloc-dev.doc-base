@@ -1,0 +1,9 @@
+Document: libjemalloc-dev
+Title: Debian libjemalloc Manual
+Author: Jason Evans
+Abstract: This manual describes how to use the jemalloc library
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libjemalloc-dev/jemalloc.html
+Files: /usr/share/doc/libjemalloc-dev/jemalloc.html
