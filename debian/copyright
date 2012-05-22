@@ -87,7 +87,8 @@ License:
  Andrea Leofreddi.
 
 Files: debian/*
-Copyright: 2011 Stig Sandbeck Mathisen <ssm@debian.org>
+Copyright: 2011,2012 Stig Sandbeck Mathisen <ssm@debian.org>,
+           2012 Robert Edmonds <edmonds@debian.org>
 License: BSD-3-Clause
 
 License: BSD-3-Clause
