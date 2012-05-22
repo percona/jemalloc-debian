@@ -36,10 +36,11 @@ Description: general-purpose scalable concurrent malloc(3) implementation
 
 Package: libjemalloc1-dbg
 Section: debug
-Priority: extra
 Architecture: any
 Depends: libjemalloc1 (= ${binary:Version}), ${misc:Depends}
 Description: debug symbols for jemalloc
- Files used for debugging and profiling with jemalloc.
+ Debug symbols for the jemalloc library. This may be used for
+ debugging and profiling.
  .
- Debug symbols.
+ Jemalloc is a library providing a malloc(3) implementation for
+ multi-threaded processes on multi-processor systems.
