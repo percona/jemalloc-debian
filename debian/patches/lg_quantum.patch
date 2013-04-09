@@ -1,0 +1,29 @@
+From: Stig Sandbeck Mathisen <ssm@debian.org>
+Subject: Add LG_QUANTUM values for "sparc" and "s390"
+Bug-Debian: http://bugs.debian.org/624325
+Forwarded: no
+
+Add LG_QUANTUM values for architectures "sparc" and "s390".  Values are taken
+from the vendored version of jemalloc in the "varnish" package.
+--- jemalloc.orig/include/jemalloc/internal/jemalloc_internal.h.in
++++ jemalloc/include/jemalloc/internal/jemalloc_internal.h.in
+@@ -261,6 +261,9 @@
+ #  ifdef __alpha__
+ #    define LG_QUANTUM		4
+ #  endif
++#  ifdef __sparc__
++#    define LG_QUANTUM		4
++#  endif
+ #  ifdef __sparc64__
+ #    define LG_QUANTUM		4
+ #  endif
+@@ -276,6 +279,9 @@
+ #  ifdef __powerpc__
+ #    define LG_QUANTUM		4
+ #  endif
++#  ifdef __s390__
++#    define LG_QUANTUM		4
++#  endif
+ #  ifdef __s390x__
+ #    define LG_QUANTUM		4
+ #  endif

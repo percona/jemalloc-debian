@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_build:
+	make all doc
+
+override_dh_auto_test:
+	make check
+
+override_dh_auto_install:
+	make install_include install_lib DESTDIR=$(CURDIR)/debian/tmp
+
+override_dh_strip:
+	dh_strip -p libjemalloc1 --dbg-package=libjemalloc1-dbg
+	dh_strip -a --remaining-packages

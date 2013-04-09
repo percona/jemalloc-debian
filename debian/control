@@ -1,0 +1,46 @@
+Source: jemalloc
+Priority: extra
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Build-Depends:
+ automake,
+ debhelper (>= 8),
+ docbook-xsl,
+ xsltproc,
+Standards-Version: 3.9.3
+Section: libs
+Homepage: http://www.canonware.com/jemalloc/
+Vcs-Git: git://git.debian.org/collab-maint/jemalloc.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/jemalloc.git;a=summary
+
+Package: libjemalloc-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libjemalloc1 (= ${binary:Version})
+Description: development files and documentation for jemalloc
+ Files used for development with jemalloc. This package contains
+ headers and documentation.
+ .
+ Jemalloc is a library providing a malloc(3) implementation for
+ multi-threaded processes on multi-processor systems.
+
+Package: libjemalloc1
+Architecture: amd64 armel armhf i386 ia64 mips mipsel powerpc s390 s390x sparc
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: general-purpose scalable concurrent malloc(3) implementation
+ A library providing a malloc(3) implementation for multi-threaded processes on
+ multi-processor systems.
+ .
+ Notable features are reduced lock contention, predictable low fragmentation,
+ and introspection with heap profiling.
+
+Package: libjemalloc1-dbg
+Section: debug
+Architecture: any
+Depends: libjemalloc1 (= ${binary:Version}), ${misc:Depends}
+Description: debug symbols for jemalloc
+ Debug symbols for the jemalloc library. This may be used for
+ debugging and profiling.
+ .
+ Jemalloc is a library providing a malloc(3) implementation for
+ multi-threaded processes on multi-processor systems.
