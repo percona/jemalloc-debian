@@ -3,7 +3,7 @@ Priority: extra
 Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
 Build-Depends:
  automake,
- debhelper (>= 9),
+ debhelper (>= 8),
  docbook-xsl,
  xsltproc,
 Standards-Version: 3.9.3

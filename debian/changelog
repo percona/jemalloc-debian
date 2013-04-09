@@ -1,3 +1,13 @@
+jemalloc (3.0.0-3.1) stable; urgency=low
+
+  * Non-maintainer upload.
+  * Change the install directories of the libraries to be /usr/lib/
+    instead of /usr/lib/jemalloc for libjemalloc-dev and libjemalloc1
+  * Change compatibility level to 8 in order to be able to build it in
+    debian squeeze
+
+ -- Ignacio Nin <ignacio.nin@percona.com>  Tue, 09 Apr 2013 15:04:43 -0400
+
 jemalloc (3.0.0-3) unstable; urgency=low
 
   [ Robert S. Edmonds ]
